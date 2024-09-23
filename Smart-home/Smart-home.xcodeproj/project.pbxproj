@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D962A1652CA147D900A77F70 /* WebSocketManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D962A1642CA147D900A77F70 /* WebSocketManager.swift */; };
 		D98ECD572CA13E1100955447 /* StreamingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98ECD562CA13E1100955447 /* StreamingView.swift */; };
 		D9B42D2D2C8487D800249D12 /* Smart_homeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B42D2C2C8487D800249D12 /* Smart_homeApp.swift */; };
 		D9B42D2F2C8487D800249D12 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B42D2E2C8487D800249D12 /* ContentView.swift */; };
@@ -38,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D962A1642CA147D900A77F70 /* WebSocketManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSocketManager.swift; sourceTree = "<group>"; };
 		D98ECD552CA13AE100955447 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		D98ECD562CA13E1100955447 /* StreamingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreamingView.swift; sourceTree = "<group>"; };
 		D9B42D292C8487D800249D12 /* Smart-home.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Smart-home.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -105,6 +107,7 @@
 			children = (
 				D98ECD552CA13AE100955447 /* Info.plist */,
 				D9B42D2C2C8487D800249D12 /* Smart_homeApp.swift */,
+				D962A1642CA147D900A77F70 /* WebSocketManager.swift */,
 				D9B42D2E2C8487D800249D12 /* ContentView.swift */,
 				D9B42D562C8489C400249D12 /* HomeView.swift */,
 				D9B42D582C8489D000249D12 /* ListView.swift */,
@@ -277,6 +280,7 @@
 				D9B42D2F2C8487D800249D12 /* ContentView.swift in Sources */,
 				D9B42D2D2C8487D800249D12 /* Smart_homeApp.swift in Sources */,
 				D9B42D5B2C8489E200249D12 /* MoreView.swift in Sources */,
+				D962A1652CA147D900A77F70 /* WebSocketManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -450,7 +454,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -482,7 +486,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

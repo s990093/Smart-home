@@ -1,27 +1,37 @@
 import SwiftUI
 
 struct ListView: View {
+    @StateObject private var webSocketManager = WebSocketManager()
+    
     var body: some View {
         VStack {
-            Text("即時環境數據")
-                .font(.largeTitle)
-                .fontWeight(.bold)
-                .padding()
             
             NavigationView {
                 List {
-                    EnvironmentDataView(dataType: "溫度", value: "24°C", iconName: "thermometer")
-                    EnvironmentDataView(dataType: "濕度", value: "50%", iconName: "humidity")
-                    EnvironmentDataView(dataType: "亮度", value: "800 Lux", iconName: "light.max")
+                    Text("即時數據")
+                        .font(.largeTitle)
+                        .fontWeight(.bold)
+                        .padding()
+                    EnvironmentDataView(dataType: "溫度", value: webSocketManager.temperature, iconName: "thermometer")
+                    EnvironmentDataView(dataType: "濕度", value: webSocketManager.humidity, iconName: "humidity")
+                    EnvironmentDataView(dataType: "亮度", value: webSocketManager.light, iconName: "light.max")
                     
                     // 將 VideoView 包裝在 NavigationLink 中
-                    NavigationLink(destination: StreamingView(streamURL: "http://172.20.10.5/capture")) {
+                    NavigationLink(destination: StreamingView(streamURL: "rtmp://49.213.238.75/live/123")) {
                         EnvironmentDataView(dataType: "即時影像", value: "查看", iconName: "camera.fill")
                     }
                 }
-                .navigationTitle("環境數據")
+                Spacer()
             }
+            
         }
+        .onAppear {
+            webSocketManager.connect()
+        }
+        .onDisappear {
+            webSocketManager.disconnect()
+        }
+        
     }
 }
 

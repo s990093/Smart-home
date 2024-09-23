@@ -15,6 +15,16 @@ struct HomeView: View {
             
             Spacer()
             
+            Image("Designer")
+                .resizable() // 使圖片可調整大小
+                .aspectRatio(contentMode: .fit) // 保持圖片比例
+                .frame(width: 300) // 設置圖片大小
+                .cornerRadius(20) // 添加圓角，您可以調整數值以改變圓角大小
+                .shadow(radius: 5) // 可選：添加陰影效果
+            
+            Spacer()
+            
+            
             // 控制LED 1
             DeviceControlView(deviceName: "LED 1", iconName: "lightbulb.fill", color: .yellow, deviceState: $led1State, actionCode: "1234", deviceIndex: 0, onDeviceStateChange: handleDeviceStateChange)
             // 控制LED 2

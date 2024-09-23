@@ -3,7 +3,7 @@ import websockets
 import json
 
 async def test_websocket():
-    uri = "ws://49.213.238.75:8001/ws/sensor/room_name/"  # 替換為你的 WebSocket URL
+    uri = "ws://49.213.238.75:800/ws/sensor/room_name/"  # 替換為你的 WebSocket URL
 
     # 模擬客户端連接到 WebSocket 伺服器
     async with websockets.connect(uri) as websocket:
