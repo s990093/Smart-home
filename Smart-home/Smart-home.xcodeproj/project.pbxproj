@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D98ECD572CA13E1100955447 /* StreamingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98ECD562CA13E1100955447 /* StreamingView.swift */; };
 		D9B42D2D2C8487D800249D12 /* Smart_homeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B42D2C2C8487D800249D12 /* Smart_homeApp.swift */; };
 		D9B42D2F2C8487D800249D12 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B42D2E2C8487D800249D12 /* ContentView.swift */; };
 		D9B42D312C8487DA00249D12 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9B42D302C8487DA00249D12 /* Assets.xcassets */; };
@@ -37,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D98ECD552CA13AE100955447 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		D98ECD562CA13E1100955447 /* StreamingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreamingView.swift; sourceTree = "<group>"; };
 		D9B42D292C8487D800249D12 /* Smart-home.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Smart-home.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9B42D2C2C8487D800249D12 /* Smart_homeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Smart_homeApp.swift; sourceTree = "<group>"; };
 		D9B42D2E2C8487D800249D12 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -100,10 +103,12 @@
 		D9B42D2B2C8487D800249D12 /* Smart-home */ = {
 			isa = PBXGroup;
 			children = (
+				D98ECD552CA13AE100955447 /* Info.plist */,
 				D9B42D2C2C8487D800249D12 /* Smart_homeApp.swift */,
 				D9B42D2E2C8487D800249D12 /* ContentView.swift */,
 				D9B42D562C8489C400249D12 /* HomeView.swift */,
 				D9B42D582C8489D000249D12 /* ListView.swift */,
+				D98ECD562CA13E1100955447 /* StreamingView.swift */,
 				D9B42D5A2C8489E200249D12 /* MoreView.swift */,
 				D9B42D302C8487DA00249D12 /* Assets.xcassets */,
 				D9B42D322C8487DA00249D12 /* Preview Content */,
@@ -267,6 +272,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D9B42D592C8489D000249D12 /* ListView.swift in Sources */,
+				D98ECD572CA13E1100955447 /* StreamingView.swift in Sources */,
 				D9B42D572C8489C400249D12 /* HomeView.swift in Sources */,
 				D9B42D2F2C8487D800249D12 /* ContentView.swift in Sources */,
 				D9B42D2D2C8487D800249D12 /* Smart_homeApp.swift in Sources */,
@@ -437,12 +443,14 @@
 				DEVELOPMENT_TEAM = S8TAUN5365;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Smart-home/Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -467,12 +475,14 @@
 				DEVELOPMENT_TEAM = S8TAUN5365;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Smart-home/Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
